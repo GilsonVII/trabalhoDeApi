@@ -12,5 +12,7 @@ const usersRouter = Router();
 usersRouter.get('/:id', getUserByIdController);
 //exercício 2
 usersRouter.get('/age-range', getUsersByAgeRangeController);
+//exercício 4
+usersRouter.put('/:id', updateUserController);
 
 export default usersRouter;
