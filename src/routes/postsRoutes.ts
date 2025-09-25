@@ -11,5 +11,7 @@ const postsRouter = Router();
 postsRouter.post('/', createPostController);
 //exercício 5
 postsRouter.patch('/:id', patchPostController);
+//exercício 6
+postsRouter.delete('/:id', deletePostController);
 
 export default postsRouter;
