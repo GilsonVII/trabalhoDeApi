@@ -14,5 +14,7 @@ usersRouter.get('/:id', getUserByIdController);
 usersRouter.get('/age-range', getUsersByAgeRangeController);
 //exercício 4
 usersRouter.put('/:id', updateUserController);
+//exercício 7
+usersRouter.delete('/cleanup-inactive', cleanupInactiveUsersController);
 
 export default usersRouter;

@@ -32,3 +32,9 @@ export const updateUser = (userId: number, updateData: Partial<User>): User | nu
   const updatedUser = { ...existingUser, ...updateData };
   return updateUserInDatabase(updatedUser as User);
 };
+
+//exercício 7
+export const cleanupInactiveUsers = (): User[] => {
+  const usersWithPosts = findUsersWithPosts();
+  return removeInactiveUsers(usersWithPosts);
+};
