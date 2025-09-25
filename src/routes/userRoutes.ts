@@ -8,6 +8,6 @@ import {
 
 const usersRouter = Router();
 
-
+usersRouter.get('/:id', getUserByIdController);
 
 export default usersRouter;
