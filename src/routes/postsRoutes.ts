@@ -9,5 +9,7 @@ const postsRouter = Router();
 
 //exercício 3
 postsRouter.post('/', createPostController);
+//exercício 5
+postsRouter.patch('/:id', patchPostController);
 
 export default postsRouter;

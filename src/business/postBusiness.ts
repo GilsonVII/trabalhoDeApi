@@ -19,3 +19,8 @@ export const createPost = (title: string, content: string, authorId: number): Po
   };
   return addPostToDatabase(newPost);
 };
+
+//exercício 5
+export const patchPost = (postId: number, updates: Partial<Post>): Post | null => {
+  return updatePostInDatabase(postId, updates);
+};
