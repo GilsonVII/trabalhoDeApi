@@ -8,6 +8,9 @@ import {
 
 const usersRouter = Router();
 
+//exercício 1
 usersRouter.get('/:id', getUserByIdController);
+//exercício 2
+usersRouter.get('/age-range', getUsersByAgeRangeController);
 
 export default usersRouter;
