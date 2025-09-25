@@ -7,6 +7,7 @@ import {
 
 const postsRouter = Router();
 
-
+//exercício 3
+postsRouter.post('/', createPostController);
 
 export default postsRouter;
