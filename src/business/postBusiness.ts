@@ -5,7 +5,7 @@ import {
   findPostById
 } from '../data/postData';
 import { findUserById } from '../data/userData';
-import { Post, User, posts } from '../data/database'; 
+import { Post, posts } from '../data/database'; 
 
 //exercício 3
 export const createPost = (title: string, content: string, authorId: number): Post => {
